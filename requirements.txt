@@ -2,7 +2,6 @@ setuptools==57.5.0
 django-celery
 wheel==0.37.0
 gunicorn==19.7.1
->>>>>>> bb38d3357b810b2f51d26238131115c36790649e
 amqp==5.1.1
 antiorm==1.2.1
 anyjson==0.3.3
