@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 setuptools==57.5.0
 django-celery
 wheel==0.37.0
