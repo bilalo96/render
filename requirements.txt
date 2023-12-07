@@ -1,8 +1,6 @@
-setuptools==57.5.0
-django-celery
-wheel==0.37.0
 amqp==5.1.1
 antiorm==1.2.1
+anyjson==0.3.3
 asgiref==3.6.0
 async-timeout==4.0.3
 beautifulsoup4==4.11.2
@@ -25,6 +23,7 @@ dj-rest-auth==5.0.1
 Django==4.1.6
 django-allauth==0.56.1
 django-bootstrap4==22.3
+django-celery==3.3.1
 django-filter==22.1
 django-icons==22.1
 django-summernote==0.8.20.0
@@ -53,4 +52,4 @@ urllib3==2.0.5
 vine==5.0.0
 wcwidth==0.2.6
 webencodings==0.5.1
-
+whitenoise==6.6.0
