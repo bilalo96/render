@@ -1,5 +1,5 @@
 setuptools==57.5.0
-django-celery
+django-celery==3.3.1
 wheel==0.37.0
 gunicorn==19.7.1
 amqp==5.1.1
