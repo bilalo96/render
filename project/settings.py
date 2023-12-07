@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-zsopd$b8xd73@x$-cwnhe79myt5v03%m8&jix=6i@7l38o-znn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['speedswitchcarrental.onrender.com']
 
 
 # Application definition
