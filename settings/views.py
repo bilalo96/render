@@ -85,7 +85,11 @@ def contact(request):
         email= request.POST['email']
         message= request.POST['message']
 
-        send_mail_task(subject,name,email,message)
+        send_mail_task.delay(subject,
+        f'message from{name}\n email:{email} \n Message:{message}',
+        email,
+        [settings.EMAIL_HOST_USER],
+        )
 
     return render(request,'settings/contact.html',{'site_info': site_info})
 
