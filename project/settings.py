@@ -171,11 +171,15 @@ EMAIL_HOST_USER = 'qwiderbilal27@gmail.com'
 EMAIL_HOST_PASSWORD = 'babanwwncvnmunob'
 EMAIL_USE_TLS = True
 EMAIL_PORT =    '587'
+redis_url = os.getenv('REDISTOGO_URL')
+urlparse.uses_netloc.append('redis')
+url = urlparse.urlparse(redis_url)
+conn = Redis(host=url.render, port=url.443, db=0)
 
 
 # Celery settings
-CELERY_BROKER_URL = "redis://localhost:6379"
-CELERY_RESULT_BACKEND = "redis://localhost:6379"
+CELERY_BROKER_URL = "redis://render:443"
+CELERY_RESULT_BACKEND = "redis://render:443"
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
