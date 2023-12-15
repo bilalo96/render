@@ -33,6 +33,14 @@ function init() {
             }
         ]
     };
+        new google.maps.Marker({
+        position :{lat:25.255901445315114,lng: 55.33936933429995},
+        map : myLatlng,
+        label:"A",
+        title : "SpeedSwichCarRental",
+        draggable:false,
+        animation:google.maps.Animation.BOUNCE,
+    })
 
     
 
