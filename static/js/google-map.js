@@ -8,7 +8,7 @@ function init() {
     var myLatlng = new google.maps.LatLng(25.184242 , 55.272430);
     // 39.399872
     // -8.224454
-    
+    var map = new google.maps.Map(mapElement, mapOptions);
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 7,
